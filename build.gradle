@@ -6,10 +6,16 @@ group 'com.finedo'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
+    maven { url "repo.maven.apache.org/maven2" }
 }
 
 dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
+
+
